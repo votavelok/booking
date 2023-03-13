@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Бронирование</h1>
+    <form method="post">
+        {% csrf_token %}
+        <div class = 'home'>
+        <label for="start_date">Дата заезда:</label>
+        <input type="date" id="start_date" name="start_date" required>
+        <br>
+        <br>
+        <label for="end_date">Дата выезда:</label>
+        <input type="date" id="end_date" name="end_date" required>
+        <br><br>
+        <button type="submit">Проверить даты</button>
+        </div>
+    </form>
+{% endblock %}

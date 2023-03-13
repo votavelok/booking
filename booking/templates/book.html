@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Бронирование</h1>
+    <div class = "dates">
+        <p>Выбранные даты:<br /><br />{{ start_date }} - {{ end_date }}</p>
+        
+    </div>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Забронировать</button>
+    </form>
+{% endblock %}

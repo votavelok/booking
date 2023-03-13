@@ -1,0 +1,103 @@
+/* Общие стили для всего сайта */
+body {
+    background-image: url("/static/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #B7D3E9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Стили для контента страницы */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff96;
+    padding: 20px;
+    opacity: 0.9;
+    
+  }
+  
+  /* Стили для форм */
+  form {
+    background-color: #5dbb5d00;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    margin-bottom: 0.5cm; /* add margin-bottom property with value of 0.5cm */
+    opacity: 0.9;
+    
+  }
+  
+  /* Стили для элементов форм */
+  form input[type="text"], form input[type="email"], form select {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    opacity: 0.9;
+  }
+  
+  /* Стили для кнопок форм */
+  form button[type="submit"] {
+    background-color: #3379b7;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #286090;
+  }
+  
+  .home-button {
+    background-color: #286090;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+h1 {
+  font-size: 48px;
+  font-family: Arial, sans-serif;
+}
+p {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+}
+.dates p {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  background-color: #F8F8F8;
+}
+.home label {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  background-color: #e0cfcf00;
+}
+input[type="date"] {
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}

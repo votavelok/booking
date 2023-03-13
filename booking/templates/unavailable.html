@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+   
+    <h1>Бронирование</h1>
+    <p>Выбранные даты заняты</p>
+    <p>Выберите другие даты</p>
+    <a href="{% url 'booking:home' %}" class="home-button">На главную страницу</a>
+{% endblock %}
