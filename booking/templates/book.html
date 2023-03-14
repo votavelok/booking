@@ -2,10 +2,7 @@
 
 {% block content %}
     <h1>Бронирование</h1>
-    <div class = "dates">
-        <p>Выбранные даты:<br /><br />{{ start_date }} - {{ end_date }}</p>
-        
-    </div>
+    <p>Выбранные даты: {{ start_date }} - {{ end_date }}</p>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
